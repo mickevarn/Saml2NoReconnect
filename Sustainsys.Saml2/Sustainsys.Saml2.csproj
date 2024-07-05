@@ -4,7 +4,7 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <PackageReleaseNotes>$releaseNotes$</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/Sustainsys/Saml2</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/mickevarn/Saml2NoReconnect</PackageProjectUrl>
     <PackageIcon>sustainsys.png</PackageIcon>
     <PackageTags>SAML2 authentication AspNet SAML SSO</PackageTags>
     <PackageDescription>SAML2 protocol support. Do not use directly, use the high level package for your platform.</PackageDescription>
@@ -23,6 +23,10 @@
   <PropertyGroup>
     <NoWarn>1701;1702;1591</NoWarn>
     <Authors>Sustainsys</Authors>
+    <PackageId>Saml2.NoReconnect</PackageId>
+    <Title>Saml2 package</Title>
+    <Description>An Saml2 fork without reconnect on system.net.webexception</Description>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>

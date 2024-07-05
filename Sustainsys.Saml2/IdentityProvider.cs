@@ -398,8 +398,8 @@ namespace Sustainsys.Saml2
                     catch (WebException ex)
                     {
                         spOptions.Logger?.WriteError("Failed to load metadata for idp " + EntityId.Id, ex);
-                        MetadataValidUntil = DateTime.MinValue;
-                        throw;
+                        // MetadataValidUntil = DateTime.MinValue; //Dont continuously retry.
+                        throw; 
                     }
                 }
             }

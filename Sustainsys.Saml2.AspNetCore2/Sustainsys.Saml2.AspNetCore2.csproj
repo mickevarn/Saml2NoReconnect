@@ -5,7 +5,7 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <PackageReleaseNotes>$releaseNotes$</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/Sustainsys/Saml2</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/mickevarn/Saml2NoReconnect</PackageProjectUrl>
     <PackageIcon>sustainsys.png</PackageIcon>
     <Copyright>Copyright © Sustainsys and contributors 2017-2020</Copyright>
     <PackageTags>SAML2 authentication AspNet SAML SSO</PackageTags>
@@ -18,6 +18,9 @@
 
   <PropertyGroup>
     <Authors>Sustainsys</Authors>
+    <PackageId>Saml2.AspNetCore2.NoReconnect</PackageId>
+    <Title>Saml2.AspNetCore2.NoReconnect</Title>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup Condition="('$(TargetFrameworkIdentifier)' == '.NETCoreApp' And $([MSBuild]::VersionGreaterThanOrEquals($(TargetFrameworkVersion), '6.0')))">
