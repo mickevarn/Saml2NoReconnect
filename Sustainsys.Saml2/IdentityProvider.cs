@@ -117,16 +117,8 @@ namespace Sustainsys.Saml2
             set
             {
                 loadMetadata = value;
-                try
-                {
-                    DoLoadMetadata();
-                    Validate();
-                }
-                catch (WebException)
-                {
-                    // Ignore if metadata load failed, an automatic
-                    // retry has been scheduled.
-                }
+                DoLoadMetadata();
+                Validate();
             }
         }
 
